@@ -1,0 +1,96 @@
+
+//==================== WEBFONTS: ==================
+//==================================================
+
+// #Forver Freedom
+@font-face {
+  font-family: 'Forever Freedom';
+  src: url('#{$path-font}/Forever-Freedom/ForeverFreedomRegularFont-Regular.woff2') format('woff2'),
+       url('#{$path-font}/Forever-Freedom/ForeverFreedomRegularFont-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Forever Freedom';
+  src: url('#{$path-font}/Forever-Freedom/ForeverFreedomItalic-Regular.woff2') format('woff2'),
+       url('#{$path-font}/Forever-Freedom/ForeverFreedomItalic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// #Forver Freedom Outline
+@font-face {
+  font-family: 'Forever Freedom Outline';
+  src: url('#{$path-font}/Forever-Freedom/ForeverFreedomOutline-Regular.woff2') format('woff2'),
+       url('#{$path-font}/Forever-Freedom/ForeverFreedomOutline-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Forever Freedom Outline';
+  src: url('#{$path-font}/Forever-Freedom/ForeverFreedomOutlineItalic-Regular.woff2') format('woff2'),
+       url('#{$path-font}/Forever-Freedom/ForeverFreedomOutlineItalic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// #Galano Grotesque
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Light.woff2') format('woff2'),
+       url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Regular.woff2') format('woff2'),
+       url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-SemiBold.woff2') format('woff2'),
+       url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Bold.woff2') format('woff2'),
+       url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+// #Global
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
