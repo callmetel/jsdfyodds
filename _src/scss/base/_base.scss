@@ -41,9 +41,9 @@ body {
 }
 
 body {
-  @include text(18px, 1.5, $font-weight-light, $black);
+  // @include text(18px, 1.5, $font-weight-light, $black);
   text-align: left;
-  background-color: $white;
+  background-color: $black;
   overflow: hidden;
   
 }
