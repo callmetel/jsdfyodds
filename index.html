@@ -23,9 +23,60 @@
 	<title>JSDFY | There Are No Rules.</title>
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/_lib/css/style.min.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() {
+			var e,
+				t = document.createElement("style");
+			return (
+				(t.innerHTML = "root: { --tmp-var: bold; }"),
+				document.head.appendChild(t),
+				(e = !!(
+					window.CSS &&
+					window.CSS.supports &&
+					window.CSS.supports("font-weight", "var(--tmp-var)")
+				)),
+				t.parentNode.removeChild(t),
+				e
+			);
+		};
+		supportsCssVars() ||
+			alert(
+				"Please view this demo in a modern browser that supports CSS Variables."
+			);
+	</script>
 </head>
 <body>
-	
+	<main>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">WebGL Sticky Image Effect</h1>
+				<p class="frame__tagline">
+					Based on <a href="http://ultranoir.com">Ultranoir's website</a>
+				</p>
+			</div>
+			<div class="frame__links">
+				<a href="https://tympanus.net/Development/CrossroadsSlideshow/">Previous demo</a>
+				<a href="https://tympanus.net/codrops/?p=39980">Article</a>
+				<a href="https://github.com/Anemolo/StickyImageEffect">GitHub</a>
+			</div>
+			<p class="frame__tip">Click &amp; drag</p>
+		</div>
+		<div class="content" id="app">
+			<!-- the content -->
+		</div>
+	</main>
+	<div class="cursor">
+		<div class="cursor__inner cursor__inner--circle"></div>
+		<div class="cursor__inner cursor__inner--dot"></div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.3.0/dist/simpleParallax.min.js" defer></script>
+	<script src="src/js/index.js"></script>
 </body>
 </html>

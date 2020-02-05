@@ -1,0 +1,37 @@
+{
+  "name": "jsdfyodds",
+  "version": "0.0.1",
+  "description": "JSDFY Official Site",
+  "main": "./dist/main.js",
+  "author": {
+    "name": "TEL",
+    "url": "https://jsdfyodds.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callmetel/jsdfyodds.git"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.25%"
+  ],
+  "devDependencies": {
+    "autoprefixer": "9.7.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "4.1.10",
+    "del": "5.1.0",
+    "graceful-fs": "^4.2.3",
+    "gulp": "^4.0.2",
+    "gulp-concat": "2.6.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "lazypipe": "^1.0.2"
+  },
+  "dependencies": {
+    "vinyl-fs": "^3.0.3"
+  }
+}

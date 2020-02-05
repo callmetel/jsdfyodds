@@ -37,14 +37,14 @@ button::-moz-focus-inner {
 
 html,
 body {
-  @include size(100%, 100%);
+  // @include size(100%, 100%);
 }
 
 body {
   // @include text(18px, 1.5, $font-weight-light, $black);
   text-align: left;
   background-color: $black;
-  overflow: hidden;
+  // overflow: hidden;
   
 }
 
@@ -91,4 +91,10 @@ a:active {
       overflow: auto;
     }
   }
+}
+
+#webGLApp {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
