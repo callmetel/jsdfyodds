@@ -1,0 +1,64 @@
+// #Preloader
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+#preloader {
+	@include size(100vw, 100vh);
+	@include position(fixed, top 0 left 0);
+	background: $black;
+	z-index: 9999999;
+	overflow: hidden;
+
+	.words-loader {
+		@include size(100%, 100%);
+		position: relative;
+
+		.word {
+			opacity: 0;
+			color: $white;
+			font-size: 30vw;
+			@include position(absolute, top 50% left 50%);
+			transform: translate(-50%,-50%);
+
+			&:nth-of-type(even) {
+				font-family: $hfontalt; 
+				font-style: italic;
+			}
+
+			&:nth-of-type(odd) {
+				font-family: $hfont;
+			}
+			
+			// @for $i from 1 through 6 {
+			//   &:nth-of-type(#{$i}) {
+			//   	animation: .25s ease blink forwards;
+			//     animation-delay: $i * (.25s * 2);
+			//   }
+			// }
+		}
+	}
+
+	.percentage-loader {
+		@include position(absolute, bottom 30px left 40px);
+		font-family: $bfont;
+		font-weight: $bold!important;
+		font-size: 40px;
+		color: $white;
+
+		.percent {
+			margin-left: -6.5px;
+		}
+	}
+}

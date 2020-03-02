@@ -19,12 +19,14 @@
 
 // #Layout
 @import
+  'layout/background',
   'layout/header',
   'layout/footer';
 
 // #Modules
 @import
   'modules/buttons',
-  'modules/videos';
+  'modules/intro',
+  'modules/preloader';
 
 // #Pages

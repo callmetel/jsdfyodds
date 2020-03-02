@@ -1,0 +1,40 @@
+// #Intro
+
+#intro {
+	z-index: 2;
+	position: relative;
+	@include size(100vw, 100vh);
+
+	#logo {
+		@include position(absolute, top 50% left 50%);
+		transform: translate(-50%,-50%);
+		width: 30vw;
+		filter: blur(1.5px);
+		opacity: 0;
+	}
+
+	.scroll-indicator {
+		@include position(absolute, bottom 0 left 50%);
+		transform: translateX(-50%);
+
+		.hint {
+			font-family: $bfont;
+			font-weight: $semi;
+			font-size: 10px;
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: 1.04em;
+			filter: blur(.4px);
+			opacity: 0;
+		}
+
+		.line {
+			height: 14vh;
+			width: 1px;
+			background: $white;
+			display: block;
+			margin: 5vh auto 0;
+			opacity: 0;
+		}
+	}
+}
