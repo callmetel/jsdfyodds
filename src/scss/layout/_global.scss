@@ -1,0 +1,38 @@
+// #Global Styles
+
+#social-links {
+	@include position(fixed, bottom 30px right 40px);
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+
+	.social-trigger {
+		img {
+			width: 50px;
+		}
+
+		&:not(.closed) {
+			transform: rotate(45deg);
+		}
+	}
+
+	.social-icons {
+		display: flex;
+		align-items: center;
+		width: 170px;
+
+		&:not(.open) {
+		}
+
+		a.icon {
+	    width: auto;
+	    display: block;
+			margin-left: 10px;
+
+	    img {
+		    height: 20px;
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
 						{ duration:1, y:"-20%", ease: "power4.inOut"}
 					)
 					.to(".percentage-loader",
-						{ duration:.5, y:"-50%", ease: "power4.inOut", delay:-.8}
+						{ duration:.5, y:"-60%", ease: "power4.inOut", delay:-.8}
 					)
 					.to(".words-loader",
 						{ duration:.25, alpha:0, ease: "sine.in", delay:-.5}
@@ -39,5 +39,7 @@ jQuery(document).ready(function($) {
 	scrollTL.fromTo("#logo", {alpha:0}, {alpha:1, duration:.85})
 					.fromTo(".scroll-indicator .line", {alpha:0}, {alpha:1, duration:.1, delay:.2})
 					.fromTo(".scroll-indicator .line", {y: -$scrollHeight}, {y:0, ease: "power2.out", duration:.4})
-					.fromTo(".scroll-indicator .hint", {alpha:0}, {alpha:1, ease: "sine.inOut", duration:.65});
+					.fromTo(".scroll-indicator .hint", {alpha:0}, {alpha:1, ease: "sine.inOut", duration:.65})
+					.to("#main-header", {x:0, ease: "power2.out", duration:.25, delay:.15})
+					.to("#social-links", {alpha:1, ease: "power2.out", duration:.35});
 });
