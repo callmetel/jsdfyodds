@@ -16,18 +16,39 @@ jQuery(document).ready(function($) {
 					)
 					.add(function()
 							{ 
-								var $intro = $('#intro-video');
+								if($(window).width() > 767) {
+									var $intro = $('#intro-video');
 
-								$('#preloader').hide();
-								$intro[0].play();
+									$('#preloader').hide();
+									$intro[0].play();
 
-								$intro.on('ended',function(){
-						      console.log('intro video ended');
-						      $('#bg-loop')[0].play();
-						      $intro.fadeOut(400);
-						      $intro.hide();
-						      scrollTL.play();
-						    });
+									$intro.on('ended',function(){
+							      console.log('intro video ended');
+							      $('#bg-loop')[0].play();
+							      $intro.fadeOut(400);
+							      $intro.hide();
+							      scrollTL.play();
+							    });
+							  }
+							  else {
+							  	var $intro = $('#intro-video-mobile');
+									$('#preloader').hide();
+
+									introgif.play();
+									var checkIntroInt = setInterval(checkIntro, 10);
+
+									function checkIntro() {
+										console.log(introgif.get_length());
+										console.log(introgif.get_current_frame());
+										if(introgif.get_length()-1 == introgif.get_current_frame() ) {
+											console.log('intro gif ended');
+											clearInterval(checkIntroInt);
+											$intro.fadeOut(400);
+								      $intro.hide();
+								      scrollTL.play();
+										}
+									}
+							  }
 							}
 					);
 

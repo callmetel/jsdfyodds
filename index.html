@@ -91,7 +91,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="desktop">
+		<div id="main-content">
 			<div class="cursor"></div>
 			<div id="intro">
 				<div id="logo">
@@ -103,16 +103,22 @@
 				</div>
 			</div>
 			<div id="background">
-				<video src="" id="intro-video" preload="auto" allow="autoplay"></video>
-				<video src="" id="bg-loop" preload="auto" allow="autoplay" loop></video>
+				<div class="desktop">
+					<video src="" id="intro-video" class="intro-video" preload="auto" allow="autoplay"></video>
+					<video src="" id="bg-loop" class="bg-loop" preload="auto" allow="autoplay" loop></video>	
+				</div>
+				<div class="mobile">
+					<img id="intro-video-mobile" class="intro-video" src="" />
+    			<img id="bg-loop-mobile" class="bg-loop" src="" />
+				</div>
 			</div>
 		</div>
-		<div class="mobile"></div>
 	</main>
 
 	<!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
+	<!-- <script src="dist/vendor/jquery.gifplayer.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.3.0/dist/simpleParallax.min.js"></script> -->

@@ -5,13 +5,21 @@
 	overflow: hidden;
 	z-index: 1;
 
-	#intro-video {
+	.desktop {
+		@include size(100%, 100%);
+	}
+
+	.mobile {
+		@include size(100%, 100%);
+	}
+
+	.intro-video {
 		@include position(absolute, top 0 left 0);
 		width: 100%;
 		z-index: 2;
 	}
 
-	#bg-loop {
+	.bg-loop {
 		width: 100vw;
 		z-index: 3;
 	}
