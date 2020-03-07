@@ -7,29 +7,25 @@
 
 	#logo {
 		@include position(absolute, top 50% left 50%);
-		transform: translate(-50%,-50%);
+		transform: translate(calc(-50% + 30px),-50%);
 		width: 30vw;
 		min-width: 250px;
-		filter: blur(1.5px);
+		filter: blur(1px);
 		opacity: 0;
-
-		@include mq(tablet-small,max) {
-			filter:blur(1px);
-		}
 	}
 
 	.scroll-indicator {
-		@include position(absolute, bottom 0 left 50%);
-		transform: translateX(-50%);
+		@include position(absolute, bottom 0 left 60px);
+		width: calc(100% - 60px);
+		text-align: center;
 
 		.hint {
 			font-family: $bfont;
 			font-weight: $semi;
-			font-size: 10px;
+			font-size: 12px;
 			color: $white;
 			text-transform: uppercase;
-			letter-spacing: 1.04em;
-			filter: blur(.4px);
+			letter-spacing: 1em;
 			opacity: 0;
 		}
 
@@ -38,7 +34,7 @@
 			width: 1px;
 			background: $white;
 			display: block;
-			margin: 5vh auto 0;
+			margin: 5vh auto -20px;
 			opacity: 0;
 		}
 	}

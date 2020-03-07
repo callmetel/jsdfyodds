@@ -1,7 +1,8 @@
 // #Background
 #background {
 	@include position(fixed, top 0 left 0);
-	width: 100vw;
+	width: calc(100vw + 20px);
+	margin: -10px;
 	overflow: hidden;
 	z-index: 1;
 

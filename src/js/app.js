@@ -60,7 +60,7 @@ if($win.width() > 767) {
   loadVideos();
 
   $("body").mousemove(function(e) {
-    parallaxIt(e, "#main-content", -25);
+    parallaxIt(e, "#background", -20);
   });
 
   function parallaxIt(e, target, movement) {
