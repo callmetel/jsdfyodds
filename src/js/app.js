@@ -86,13 +86,19 @@ else {
     $('#intro-video-mobile').attr('src',$vid+'intro.gif');
     $('#bg-loop-mobile').attr('src',$vid+'bg-loop.gif');
 
-    introgif = new SuperGif({ gif: document.getElementById('intro-video-mobile'), loop_mode: false } );
-    introgif.load();
-    introgif.pause();
-
-    setTimeout(function(){
+    introgif = new SuperGif({ gif: document.getElementById('intro-video-mobile'), loop_mode: false, auto_play: 0 } );
+    introgif.load(function(){
+      console.log('intro gif loaded');
+      introgif.pause();
+      introgif.move_to(0);
       videosloaded = true;
-    },1250);
+    });
+
+    loopgif = new SuperGif({ gif: document.getElementById('bg-loop-mobile'), loop_mode: true, auto_play: 0 } );
+    loopgif.load(function(){
+      console.log('loop gif loaded');
+      loopgif.move_to(0);
+    });
   } 
   loadGifs();
 };

@@ -83,6 +83,28 @@
   }
 }
 
+$breakpoints: (
+    "phone":        480px,
+    "phone-wide":   560px,
+    "phablet":      640px,
+    "tablet-small": 768px,
+    "tablet":       980px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
 
 // #PX-to-REM & Text
 //
@@ -161,4 +183,25 @@
   &::-moz-placeholder { @content; }
   &:-ms-input-placeholder { @content; }
   &::-webkit-input-placeholder { @content; }
+}
+
+// #Push auto
+//
+// Usage:
+// @include push--auto
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+// #Pseudo
+//
+// Usage:
+// @include pseudo(display, pos, content);
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
 }

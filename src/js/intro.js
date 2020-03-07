@@ -31,20 +31,21 @@ jQuery(document).ready(function($) {
 							    });
 							  }
 							  else {
-							  	var $intro = $('#intro-video-mobile');
+							  	var $intro = $('#background .mobile .jsgif:eq(0)');
 									$('#preloader').hide();
 
 									introgif.play();
 									var checkIntroInt = setInterval(checkIntro, 10);
 
 									function checkIntro() {
-										console.log(introgif.get_length());
-										console.log(introgif.get_current_frame());
+										// console.log(introgif.get_length());
+										// console.log(introgif.get_current_frame());
 										if(introgif.get_length()-1 == introgif.get_current_frame() ) {
 											console.log('intro gif ended');
 											clearInterval(checkIntroInt);
 											$intro.fadeOut(400);
 								      $intro.hide();
+								      loopgif.play();
 								      scrollTL.play();
 										}
 									}
