@@ -13,16 +13,20 @@
 		@include size(100%, 100%);
 	}
 
-	.intro-video,
-	.jsgif:first-of-type {
-		@include position(absolute, top 0 left 0);
-		width: 100%;
-		z-index: 2;
-	}
+	.jsgif {
+		&:first-of-type {
+			@include position(absolute, top 0 left 0);
+			width: 100%;
+			z-index: 2;
+		}
 
-	.bg-loop,
-	.jsgif:last-of-type {
-		width: 100vw;
-		z-index: 3;
+		&:last-of-type {
+			width: 100vw;
+			z-index: 3;
+		}
+
+		canvas {
+			width: 100%;
+		}
 	}
 }

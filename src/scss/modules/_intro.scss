@@ -3,7 +3,7 @@
 #intro {
 	z-index: 2;
 	position: relative;
-	@include size(100vw, 100vh);
+	@include size(100vw, 100%);
 
 	#logo {
 		@include position(absolute, top 50% left 50%);
@@ -13,7 +13,7 @@
 		filter: blur(1.5px);
 		opacity: 0;
 
-		@include mq(tablet,max) {
+		@include mq(tablet-small,max) {
 			filter:blur(1px);
 		}
 	}

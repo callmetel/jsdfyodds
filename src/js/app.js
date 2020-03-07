@@ -1,5 +1,7 @@
 var $vid          = '/assets/vid/',
     $img          = '/assets/img/',
+    $win          = $(window),
+    $fs           = $('.fs'),
     preloaderloop = true,
     preloaderTL   = gsap.timeline({paused:true, repeat:-1, delay:0}),
     introTL       = gsap.timeline({paused:true, delay: 1}),
@@ -8,11 +10,8 @@ var $vid          = '/assets/vid/',
     videosloaded  = false,
     introgif, loopgif;
 
-jQuery(document).ready(function($) {
-  
-});
 // Check If Desktop or Mobile
-if($(window).width() > 767) {
+if($win.width() > 767) {
   // Load Intro Videos into the DOM
   function loadVideos() {
     if(videosloaded === false) {
@@ -78,6 +77,10 @@ if($(window).width() > 767) {
 }
 else {
   $('.desktop').hide();
+
+  $win.resize(function(event) {
+    $fs.height($(this).innerHeight());
+  }).resize();
 
   // Load Intro Gifs into the DOM
   function loadGifs(){
