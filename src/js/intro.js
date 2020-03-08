@@ -1,4 +1,15 @@
 jQuery(document).ready(function($) {
+	var $intro = $('#intro-video'),
+			introVidDur;
+
+	if($win.width() > 767) {
+		intro = $('#background .desktop #intro-video');
+		introVidDur = intro[0].duration;
+	}
+	else {
+		intro = $('#background .mobile .jsgif:eq(0)');
+	};
+
 	introTL.to(".words-loader",
 						{ duration:1, y:"-20%", ease: "power4.inOut"}
 					)
@@ -24,6 +35,7 @@ jQuery(document).ready(function($) {
 
 									$intro.on('ended',function(){
 							      console.log('intro video ended');
+							      $('#bg-loop').show();
 							      $('#bg-loop')[0].play();
 							      $intro.fadeOut(400);
 							      $intro.hide();
@@ -51,6 +63,10 @@ jQuery(document).ready(function($) {
 									}
 							  }
 							}
+					)
+					.fromTo(background, 
+						{scale:0.1}, 
+						{scale:1, duration: 4,5, ease: "expoScale(0.1, 1)"}
 					);
 
 	var $scrollHeight;

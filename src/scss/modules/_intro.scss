@@ -10,8 +10,14 @@
 		transform: translate(calc(-50% + 30px),-50%);
 		width: 30vw;
 		min-width: 250px;
-		filter: blur(1px);
 		opacity: 0;
+
+		#img{
+		  position:absolute;
+		  left:0;
+		  top:0;  
+		  @include size(100%, auto);  
+		}
 	}
 
 	.scroll-indicator {

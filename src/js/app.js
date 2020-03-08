@@ -10,6 +10,7 @@ var $vid          = '/assets/vid/',
     videosloaded  = false,
     introgif, loopgif;
 
+
 // Check If Desktop or Mobile
 if($win.width() > 767) {
   // Load Intro Videos into the DOM
@@ -107,7 +108,7 @@ else {
 };
 
 var $cursor = $('.cursor'),
-    $wrapper = $('#main-content'); 
+    $wrapper = $('#background'); 
 
   function movecursor(e) {
     gsap.to($cursor, {
@@ -119,14 +120,14 @@ var $cursor = $('.cursor'),
     });
   }
 
-var flag = false;
-$($wrapper).mouseover(function(){
-  flag = true;
-  gsap.to($cursor,{duration:0.4,scale:1,autoAlpha:1})
-  $($wrapper).on('mousemove', movecursor);
-});
-$($wrapper).mouseout(function(){
-    flag = false;
-    gsap.to($cursor,{duration:0.4,scale:0.1,autoAlpha:0})
-});
+// var flag = false;
+// $($wrapper).mouseover(function(){
+//   flag = true;
+//   gsap.to($cursor,{duration:0.4,scale:1,autoAlpha:1})
+//   $($wrapper).on('mousemove', movecursor);
+// });
+// $($wrapper).mouseout(function(){
+//     flag = false;
+//     gsap.to($cursor,{duration:0.4,scale:0.1,autoAlpha:0})
+// });
  

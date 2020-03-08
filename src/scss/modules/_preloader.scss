@@ -1,6 +1,6 @@
 // #Preloader
 
-@keyframes blink {
+@include keyframe(blink) {
   0% {
     opacity: 0;
   }

@@ -1,33 +1,61 @@
 // #Background
+
 #background {
-	@include position(fixed, top 0 left 0);
+	@include position(absolute, top 0 left 0);
 	width: calc(100vw + 20px);
 	margin: -10px;
 	overflow: hidden;
 	z-index: 1;
 
+	&:after {
+		@include pseudo(block,absolute,'');
+		@include size(100%, 100px);
+		bottom: -80px;
+		left: 0;
+		background: $black;
+		box-shadow: 10px 10px 28px 49px $black;
+
+	}
+
 	.desktop {
 		@include size(100%, 100%);
+		min-height: 100vh;
+    display: flex;
+    align-items: center;
+		
+		video {
+			margin: auto;
+
+			&#bg-loop {
+				display: none;
+			}
+		}	
 	}
 
 	.mobile {
 		@include size(100%, 100%);
-	}
+		
+		.jsgif {
+			&:first-of-type {
+				@include position(absolute, top 0 left 0);
+				width: 100%;
+				z-index: 2;
+			}
 
-	.jsgif {
-		&:first-of-type {
-			@include position(absolute, top 0 left 0);
-			width: 100%;
-			z-index: 2;
-		}
+			&:last-of-type {
+				width: 100vw;
+				z-index: 3;
+			}
 
-		&:last-of-type {
-			width: 100vw;
-			z-index: 3;
+			canvas {
+				width: 100%;
+			}
 		}
+	}	
+}
 
-		canvas {
-			width: 100%;
-		}
+.jquery-ripples {
+	canvas {
+		z-index: 100!important;
 	}
 }
