@@ -10,6 +10,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 var replace = require('gulp-replace');
+var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 
 
@@ -37,7 +38,9 @@ function jsTask(){
         files.jsPath
         //,'!' + 'includes/js/jquery.min.js', // to exclude any specific files
         ])
+        .pipe(plumber())
         .pipe(concat('all.js'))
+        .pipe(plumber.stop())
         .pipe(terser())
         .pipe(dest('dist')
     );

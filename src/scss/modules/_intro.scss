@@ -3,20 +3,31 @@
 #intro {
 	z-index: 2;
 	position: relative;
-	@include size(100vw, 100%);
+	@include size(100vw, 100vh);
 
 	#logo {
 		@include position(absolute, top 50% left 50%);
 		transform: translate(calc(-50% + 30px),-50%);
-		width: 30vw;
-		min-width: 250px;
-		opacity: 0;
+		transition: width .35s ease-in-out;
+		width: 480px;
 
-		#img{
-		  position:absolute;
-		  left:0;
-		  top:0;  
-		  @include size(100%, auto);  
+		@include mq(tablet,max) {
+			width: 400px;
+		}
+
+		@include mq(tablet-small,max) {
+			width: 300px;
+		}
+
+		.logo {
+			opacity: 0;
+			width: 100%;
+			display: block;			
+		}
+
+		&.done {
+			top: -10%!important;
+    	filter: blur(10px)!important;
 		}
 	}
 
@@ -27,12 +38,11 @@
 
 		.hint {
 			font-family: $bfont;
-			font-weight: $semi;
+			font-weight: $norm;
 			font-size: 12px;
 			color: $white;
 			text-transform: uppercase;
 			letter-spacing: 1em;
-			opacity: 0;
 		}
 
 		.line {

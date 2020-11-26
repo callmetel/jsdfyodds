@@ -9,6 +9,7 @@
        url('#{$path-font}/Forever-Freedom/ForeverFreedomRegularFont-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +18,7 @@
        url('#{$path-font}/Forever-Freedom/ForeverFreedomItalic-Regular.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 // #Forver Freedom Outline
@@ -26,6 +28,7 @@
        url('#{$path-font}/Forever-Freedom/ForeverFreedomOutline-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -34,6 +37,7 @@
        url('#{$path-font}/Forever-Freedom/ForeverFreedomOutlineItalic-Regular.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 // #Galano Grotesque
@@ -43,6 +47,7 @@
        url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -51,6 +56,7 @@
        url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -59,6 +65,7 @@
        url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -67,8 +74,17 @@
        url('#{$path-font}/Galano-Grotesque/GalanoGrotesque-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('#{$path-font}/Permanent-Marker/PermanentMarker-Regular.woff2') format('woff2'),
+      url('#{$path-font}/Permanent-Marker/PermanentMarker-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 // #Global
 h1 {

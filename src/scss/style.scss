@@ -9,7 +9,8 @@
   'utilities/mixins',
   'utilities/placeholders',
   'utilities/variables',
-  'utilities/grid-settings';
+  'utilities/grid-settings',
+  'utilities/scroll';
 
 // #Base
 @import
@@ -28,6 +29,7 @@
 @import
   'modules/buttons',
   'modules/intro',
-  'modules/preloader';
+  'modules/preloader',
+  'modules/we-are';
 
 // #Pages

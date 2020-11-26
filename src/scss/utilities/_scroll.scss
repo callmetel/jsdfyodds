@@ -1,0 +1,6 @@
+#scroll-trigger {
+  @include position(absolute, top 50vh left 0);
+  @include size(100vw, 2px);
+  background: $white;
+  opacity: 0;
+}

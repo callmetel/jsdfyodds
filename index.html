@@ -1,142 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="content-type" content="text/html;UTF-8">
-	<meta http-equiv="content-language" content="en">
-	<meta http-equiv="content-security-policy" content="upgrade-insecure-requests"> <!-- Upgrade insecure requests. See: https://developers.google.com/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content -->
-	<meta name="description" content="JSDFY LLC"> <!-- Website description --> 
-	<meta name="author" content="TEL"> <!-- Name of the content creator / author. -->
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+  <head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html;UTF-8">
+		<meta http-equiv="content-language" content="en">
+		<meta http-equiv="content-security-policy" content="upgrade-insecure-requests"> <!-- Upgrade insecure requests. See: https://developers.google.com/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content -->
+		<meta name="description" content="JSDFY LLC"> <!-- Website description --> 
+		<meta name="author" content="TEL"> <!-- Name of the content creator / author. -->
 
-	<meta http-equiv="cache-control" content="cache"> <!-- See: http://www.metatags.org/meta_http_equiv_cache_control -->
-	<meta http-equiv="revisit-after" content="1 month"> <!-- See: http://www.metatags.org/meta_name_revisit_after -->
+		<meta http-equiv="cache-control" content="cache"> <!-- See: http://www.metatags.org/meta_http_equiv_cache_control -->
+		<meta http-equiv="revisit-after" content="1 month"> <!-- See: http://www.metatags.org/meta_name_revisit_after -->
 
-	<meta property="og:title" content="JSDFY. There are no rules." /> <!-- Page title -->
-	<meta property="og:site_name" data-page-subject="true" content="JSDFY" /> <!-- Site name -->
-	<meta property="og:url" content="https://jsdfyodds.com" /> <!-- OpenGraph MetaData - Best Link -->
-	<meta property="og:description" name="description" content="JSDFY LLC" /> <!-- Website description again --> 
+		<meta property="og:title" content="JSDFY. There are no rules." /> <!-- Page title -->
+		<meta property="og:site_name" data-page-subject="true" content="JSDFY" /> <!-- Site name -->
+		<meta property="og:url" content="https://jsdfyodds.com" /> <!-- OpenGraph MetaData - Best Link -->
+		<meta property="og:description" name="description" content="JSDFY LLC" /> <!-- Website description again --> 
 
-	<!-- Twitter Card data -->
-	<meta name="twitter:site" content="jsdfyodds"> <!-- @username for the website used in the card footer. -->
-	<meta name="twitter:title" content="JSDFY | There Are No Rules."> <!-- Page title again -->
-	<title>JSDFY | There Are No Rules.</title>
+		<!-- Twitter Card data -->
+		<meta name="twitter:site" content="jsdfyodds"> <!-- @username for the website used in the card footer. -->
+		<meta name="twitter:title" content="JSDFY | There Are No Rules."> <!-- Page title again -->
+		<title>JSDFY | There Are No Rules.</title>
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="dist/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
-	<main>
-		<div id="preloader" class="fs">
-			<div class="words-loader">
-				<span class="word">Artists</span>
-				<span class="word">Developers</span>
-				<span class="word">Filmmakers</span>
-				<span class="word">Designers</span>
-				<span class="word">Editors</span>
-				<span class="word">Creators</span>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="dist/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+    <body class="locked">
+    	<div id="preloader" class="fs">
+				<div class="percentage-loader">
+					<span id="percent"></span>
+				</div>
+				<div class="progress-loader">
+					<span class="bar"></span>
+				</div>
+				<img src="assets/img/tv-shut-off.png" alt="" class="shut-off" />
+				<div class="volume-hint">
+					
+				</div>
 			</div>
-			<div class="percentage-loader">
-				<span id="percent"></span>
-			</div>
-		</div>
-		<header id="main-header">
-			<div class="container">
-				<div class="navbar">
-					<a href="#" class="menu-trigger">
-						<span class="burger">
-							<span class="line"></span>
-							<span class="line"></span>
-							<span class="line"></span>
-						</span>
-						<span class="text">Menu</span>
-					</a>
-					<div class="nav-logo">
-						<img src="assets/img/logo.svg" alt="JSDFY Logo" />
+      <main>
+				<header id="main-header">
+					<div class="container">
+						<div class="navbar">
+							<a href="#" class="menu-trigger">
+								<span class="burger">
+									<span class="line"></span>
+									<span class="line"></span>
+									<span class="line"></span>
+								</span>
+								<span class="text">Menu</span>
+							</a>
+							<div class="nav-logo">
+								<img src="assets/img/logo.svg" alt="JSDFY Logo" />
+							</div>
+							<span class="credits">
+								<span class="author">By Tina & Tel</span>
+								<span class="copyright">&copy;2020</span>
+							</span>
+						</div>
+						<nav class="nav">
+							<ul id="top-menu">
+								<li class="menu-item"></li>
+								<li class="menu-item"></li>
+								<li class="menu-item"></li>
+							</ul>
+						</nav>
 					</div>
-					<span class="credits">
-						<span class="author">By Tina & Tel</span>
-						<span class="copyright">&copy;2020</span>
-					</span>
+				</header>
+				<div id="social-links">
+					<a href="#" class="social-trigger" title="Social Media Links">
+						<img src="assets/img/icon-plus.svg" alt="plus icon" />
+					</a>
+					<div class="social-icons">
+						<a href="https://facebook.com" class="icon">
+							<img src="assets/img/icon-facebook.svg" alt="">
+						</a>
+						<a href="https://twitter.com" class="icon">
+							<img src="assets/img/icon-twitter.svg" alt="">
+						</a>
+						<a href="https://instagram.com" class="icon">
+							<img src="assets/img/icon-instagram.svg" alt="">
+						</a>
+						<a href="https://behance.net" class="icon">
+							<img src="assets/img/icon-behance.svg" alt="">
+						</a>
+						<a href="https://vimeo.com" class="icon">
+							<img src="assets/img/icon-vimeo.svg" alt="">
+						</a>
+					</div>
 				</div>
-				<nav class="nav">
-					<ul id="top-menu">
-						<li class="menu-item"></li>
-						<li class="menu-item"></li>
-						<li class="menu-item"></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<div id="social-links">
-			<a href="#" class="social-trigger" title="Social Media Links">
-				<img src="assets/img/icon-plus.svg" alt="plus icon" />
-			</a>
-			<div class="social-icons">
-				<a href="https://facebook.com" class="icon">
-					<img src="assets/img/icon-facebook.svg" alt="">
-				</a>
-				<a href="https://twitter.com" class="icon">
-					<img src="assets/img/icon-twitter.svg" alt="">
-				</a>
-				<a href="https://instagram.com" class="icon">
-					<img src="assets/img/icon-instagram.svg" alt="">
-				</a>
-				<a href="https://behance.net" class="icon">
-					<img src="assets/img/icon-behance.svg" alt="">
-				</a>
-				<a href="https://vimeo.com" class="icon">
-					<img src="assets/img/icon-vimeo.svg" alt="">
-				</a>
-			</div>
-		</div>
-		<div id="main-content">
-			<div class="cursor"></div>
-			<div id="intro" class="fs">
-				<div id="logo">
-					<svg class="logo" viewBox="0 0 550 410">
-					    <defs> 
-					        <filter id="turb">
-					            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.015" numOctaves="2"
-					                result="turbulence_2" data-filterId="3" />
-					            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_2" scale="10" />
-					        </filter>
-					    </defs>
-					    <image id="img" x="0" y="0" width="100%" height="100%" xlink:href="assets/img/logo.svg" filter="url(#turb)" />
-					</svg>
+				<div id="main-content">
+					<div id="scroll-trigger"></div>
+					<div class="cursor"></div>
+					<section id="intro" class="fs">
+						<div id="logo">
+							<img src="assets/img/logo.svg" alt="" class="logo">
+						</div>
+						<div class="scroll-indicator">
+							<span class="hint">Scroll to Begin</span>
+							<span class="line"></span>
+						</div>
+					</section>
+					<section id="we-are">
+						<div class="container">
+							<h3 class="we-are">We Are</h3>
+							<div class="words">
+								<span class="word">Artists</span>
+								<span class="word">Developers</span>
+								<span class="word">Filmmakers</span>
+								<span class="word">Designers</span>
+								<span class="word">
+									<svg class="editors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1176.62736 533.88232">
+										<path d="M122.1547,525.07959H1.66544L55.703,9.53271H176.1923L169.62,71.60254H111.20109L93.67521,235.17529h58.41894l-6.57178,62.07032H87.10343L70.308,463.00928H128.727Z" fill="none" stroke="#fff" stroke-width="3"/>
+										<path d="M241.90909,525.07959H152.08976L206.12736,9.53271h89.08886q25.55274,0,40.89307,17.5254Q349.97258,43.1289,349.9838,62.83984l-.73,7.30225L307.63029,465.20068q-2.19067,24.832-21.542,42.35352Q266.73112,525.07959,241.90909,525.07959Zm-8.76318-58.419H216.3505l42.354-398.709h16.065A14.861,14.861,0,0,1,285.72306,72.333a17.56412,17.56412,0,0,1,3.65137,10.22314v2.19092L251.40226,450.59521A21.61536,21.61536,0,0,1,244.83,461.91357,16.66231,16.66231,0,0,1,233.14591,466.66064Z" fill="none" stroke="#fff" stroke-width="3"/>
+										<path d="M390.87394,525.07959H329.53409v-2.19141L383.57169,9.53271H445.642l-.73046,2.19043Z" fill="none" stroke="#fff" stroke-width="3"/><path d="M538.36857,525.07959H477.02872L524.49405,71.60254H466.07511l6.57226-62.06983H651.55509L644.9838,71.60254H586.56437Z" fill="none" stroke="#fff" stroke-width="3"/>
+										<path d="M694.63907,532.38232q-29.95165,0-49.65625-21.90722Q625.2675,488.56837,628.91739,457.898l39.4336-382.644q2.90917-30.67017,27.01855-52.21192Q719.46769,1.511,750.13712,1.5q29.93409,0,49.65625,21.90723,20.43458,21.18822,16.79492,52.57666L777.15568,458.62842q-3.66211,30.66943-27.749,51.84668Q726.76457,532.38184,694.63907,532.38232Zm5.8418-55.498q-5.11669,0-11.68359-5.11133a20.33426,20.33426,0,0,1-4.38184-12.41406v-2.19141L724.57853,75.98389a20.52416,20.52416,0,0,1,6.207-12.77881A18.345,18.345,0,0,1,744.29532,57.728q6.57276,0,13.14454,5.11181,4.38134,5.11743,4.38085,13.87452L721.65763,457.898a19.87887,19.87887,0,0,1-6.9375,13.50976A20.91516,20.91516,0,0,1,700.48087,476.88428Z" fill="none" stroke="#fff" stroke-width="3"/>
+										<path d="M950.95157,525.07959H888.88126L911.519,307.46924q.71776-3.646-2.19141-8.7627a11.98778,11.98778,0,0,0-8.76269-3.65136H887.4213L863.32267,525.07959H801.25333L855.29044,9.53271h89.81934q24.81591,0,40.16308,17.5254,16.05322,18.26147,13.874,42.354L983.08146,220.5708q-2.18994,23.37891-18.98535,43.81445,10.21728,16.80617,10.22265,35.05176a39.32712,39.32712,0,0,1-.72949,8.76172ZM906.40665,236.63623H890.3422L907.86759,67.95166H923.933q7.29052,0,10.95312,4.38135A17.45236,17.45236,0,0,1,939.268,84.0166L924.66251,220.5708a17.7773,17.7773,0,0,1-5.8418,11.31885A17.56449,17.56449,0,0,1,906.40665,236.63623Z" fill="none" stroke="#fff" stroke-width="3"/>
+										<path d="M1053.17814,532.38232a68.73454,68.73454,0,0,1-27.38379-5.47656,64.82949,64.82949,0,0,1-22.27246-15.70117q-20.45215-22.626-16.7959-53.30664l12.41406-113.1875h57.68945l-13.14453,113.918a14.861,14.861,0,0,0,4.38086,10.95312q3.646,4.38135,10.9541,4.38086a16.66107,16.66107,0,0,0,11.6836-4.74609,17.77618,17.77618,0,0,0,5.84179-11.31836l4.38184-40.89356a88.09041,88.09041,0,0,0,1.46-12.41406,294.15814,294.15814,0,0,0,2.19141-29.93945,66.70009,66.70009,0,0,0-2.55664-19.35059q-2.56641-8.38769-11.31836-31.03515l-2.19043-5.8418-17.52637-42.35449a127.87886,127.87886,0,0,1-8.03223-19.71582l-10.22363-22.6377v-.73047l-1.46-5.11181q-9.49952-22.62525-12.04883-30.66993a57.25136,57.25136,0,0,1-2.55566-17.52539q0-8.02734,3.65039-35.05127a38.76819,38.76819,0,0,1,.73047-8.76318,88.54536,88.54536,0,0,1,1.46093-13.87451,117.107,117.107,0,0,1,1.46-14.60449q.71924-6.572,1.82617-13.87451,1.09424-7.29126,1.82519-15.335,2.19141-28.47948,27.01856-51.11669,24.09815-21.90675,53.30761-21.90723a69.37853,69.37853,0,0,1,28.4795,5.84228,61.14264,61.14264,0,0,1,21.90722,16.065q16.78859,18.99755,16.79493,42.354a50.59029,50.59029,0,0,1-.73047,9.49268l-11.6836,113.917h-57.68847l12.41406-113.917a14.861,14.861,0,0,0-4.38184-10.95313,11.78806,11.78806,0,0,0-9.49316-4.38184,18.9156,18.9156,0,0,0-12.77832,4.74659,17.13518,17.13518,0,0,0-6.207,11.31884l-3.65137,40.89307-2.19141,12.41406q-2.18994,20.45289-2.19043,29.93994a71.12657,71.12657,0,0,0,2.55567,19.35108q2.55029,9.13915,11.31933,31.03515l2.19043,5.8418a44.39954,44.39954,0,0,1,5.11133,11.68408,82.38643,82.38643,0,0,1,5.11231,10.95313q8.76268,20.45214,16.06445,39.43359l9.49316,23.36719h.73047v.73047q10.21729,23.37891,13.14453,32.12988a59.93229,59.93229,0,0,1,2.9209,18.98633q0,7.30811-3.65136,32.86035V400.939l-.73047.73047-6.57227,56.959a82.66537,82.66537,0,0,1-8.03223,28.11328,74.77741,74.77741,0,0,1-18.25586,23.7334Q1083.84758,532.38184,1053.17814,532.38232Z" fill="none" stroke="#fff" stroke-width="3"/>
+									</svg>
+								</span>
+								<span class="word">Creators</span>
+							</div>
+						</div>
+					</section>
+					<div id="background">
+						<div class="desktop">
+							<video src="" id="intro-video" preload="auto" allow="autoplay" muted></video>
+							<video src="" id="bg-loop" preload="auto" allow="autoplay" loop muted></video>	
+						</div>
+						<div class="mobile">
+							<img id="intro-video-mobile" />
+		    			<img id="bg-loop-mobile" />
+						</div>
+					</div>
 				</div>
-				<div class="scroll-indicator">
-					<span class="hint">Scroll to Begin</span>
-					<span class="line"></span>
-				</div>
-			</div>
-			<div id="js-canvas-wrapper" class="canvas-wrapper"></div>
-			<section id="next-section" style="height:400px;"></section>
-			<div id="background">
-				<div class="desktop">
-					<video src="" id="intro-video" preload="auto" allow="autoplay" muted></video>
-					<video src="" id="bg-loop" preload="auto" allow="autoplay" loop muted></video>	
-				</div>
-				<div class="mobile">
-					<img id="intro-video-mobile" />
-    			<img id="bg-loop-mobile" />
-				</div>
-			</div>
-		</div>
-	</main>
+      </main>
 
-	<!-- Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script> -->
-	<!-- <script src="dist/vendor/MorphSVGPlugin.min.js"></script> -->
-	<!-- <script src="dist/vendor/PathEditor.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.3.0/dist/simpleParallax.min.js"></script> -->
-	<script src="dist/vendor/three.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js"></script> -->
-	<script src="dist/vendor/jquery.ripples-min.js"></script>
-	<script src="dist/all.js" defer></script>
-</body>
+      <!-- Greensock Scripts -->
+			<script src="dist/vendor/gsap.min.js"></script>
+			<script src="dist/vendor/ScrollTrigger.min.js"></script>
+
+			<script src="dist/vendor/rellax.min.js"></script>
+
+			<script src="dist/all.js" defer></script>
+    </body>
 </html>

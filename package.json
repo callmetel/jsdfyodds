@@ -24,14 +24,16 @@
     "graceful-fs": "^4.2.3",
     "gulp": "^4.0.2",
     "gulp-concat": "2.6.1",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.2",
+    "lax.js": "^1.2.5",
     "lazypipe": "^1.0.2",
-    "three": "^0.113.2"
+    "locomotive-scroll": "^3.3.9"
   },
   "dependencies": {
     "vinyl-fs": "^3.0.3"

@@ -1,0 +1,45 @@
+// # We Are Section
+
+section#we-are {
+	transform: translateY(50%);
+
+	div.container {
+		@include size(100%, 100%);
+		padding-left: 60px;
+
+		h3.we-are {
+			font-family: $hfont;
+	    color: $white;
+	    font-size: 9.688em;
+	    font-style: italic;
+	    font-weight: $norm;
+	    letter-spacing: 0.1em;
+	    margin-left: 13.85vw;
+		}
+
+		div.words {
+			text-align: center;
+
+			span.word {
+				display: block;
+				font-size: 29.875em;
+				font-style: italic;
+				color: $white;
+				letter-spacing: 0.01em;
+				line-height: 1;
+
+				&:nth-of-type(even) {
+					font-family: $hfont;
+				}
+
+				&:nth-of-type(odd) {
+					font-family: $hfontalt;
+				}
+
+				svg.editors {
+					width: 65%;
+				}
+			}
+		}
+	}
+}

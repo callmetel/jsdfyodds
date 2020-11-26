@@ -20,36 +20,8 @@
 	z-index: 9999999;
 	overflow: hidden;
 
-	.words-loader {
-		@include size(100%, 100%);
-		position: relative;
-
-		.word {
-			opacity: 0;
-			color: $white;
-			font-size: 30vw;
-			@include position(absolute, top 50% left 50%);
-			transform: translate(-50%,-50%);
-
-			&:nth-of-type(even) {
-				font-family: $hfontalt; 
-				font-style: italic;
-			}
-
-			&:nth-of-type(odd) {
-				font-family: $hfont;
-			}
-			
-			// @for $i from 1 through 6 {
-			//   &:nth-of-type(#{$i}) {
-			//   	animation: .25s ease blink forwards;
-			//     animation-delay: $i * (.25s * 2);
-			//   }
-			// }
-		}
-	}
-
 	.percentage-loader {
+		display: none;
 		@include position(absolute, bottom 30px left 40px);
 		font-family: $bfont;
 		font-weight: $bold!important;
@@ -59,5 +31,28 @@
 		.percent {
 			margin-left: -6.5px;
 		}
+	}
+
+	.progress-loader {
+		@include position(fixed, top 50% left 50%);
+		@include size(1%, 1%);
+		z-index: 20;
+
+		.bar {
+			display: block;
+			@include size(100%, 100%);
+			background-image: url('../assets/img/static.gif');
+			background-size: auto;
+			background-position: center;
+			background-repeat: repeat;
+			filter: blur(.3px);
+		}
+	}
+
+	.shut-off {
+		@include position(fixed, top 50% left 50%);
+		z-index: 30;
+		display: block;
+		opacity: 0;
 	}
 }
