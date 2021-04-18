@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 			start = 0,
 			end = 100,
 			durataion = time;
-			animateValue(PercentageID, start, end, durataion);
+			// animateValue(PercentageID, start, end, durataion);
 
 
 	function animateValue(id, start, end, duration) {
@@ -28,15 +28,15 @@ jQuery(document).ready(function($) {
 				current += increment;
 				$(obj).text(current + "%");	
 				bar.animate({
-					width: current/2+ "%",
-					height: current/2+ "%"
+					width: current+ "%",
+					height: current+ "%"
 				}, 10);
 			}
 			else if (current == end-1 /*&& videosloaded == true*/) {
 				$(obj).text(current+1 + "%");
 				bar.animate({
-					width: current/2+1+ "%",
-					height: current/2+1+ "%"
+					width: current+1+ "%",
+					height: current+1+ "%"
 				}, 10);
 				preloaderloop = false;
 

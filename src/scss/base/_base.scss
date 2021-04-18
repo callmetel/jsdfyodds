@@ -44,9 +44,11 @@ body {
   // @include text(18px, 1.5, $font-weight-light, $black);
   text-align: left;
   background-color: $black;
+  background-image: url('../assets/img/blacknoise.gif');
+  background-repeat: repeat;
   @include size(100vw, 100%);
   position: relative;
-  overflow-x:hidden!important;
+  overflow-x: hidden!important;
 
   &.locked {
     overflow: hidden!important;
